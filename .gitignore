@@ -1,28 +1,17 @@
+# ローカルとGitHub両方の内容を残した例
+
 [Ll]ibrary/
 [Tt]emp/
 [Oo]bj/
 [Bb]uild/
 [Bb]uilds/
-[Ll]ogs/
 [Uu]serSettings/
 MemoryCaptures/
 
 *.csproj
 *.unityproj
 *.sln
-*.suo
-*.tmp
 *.user
-*.userprefs
 *.pidb
-*.booproj
-*.svd
-*.pdb
-*.mdb
-*.opendb
 
-*.apk
-*.aab
-
-.vs/
-.idea/
+README.md
