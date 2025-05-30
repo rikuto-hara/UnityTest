@@ -241,7 +241,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d387073f34964b243b9c911f2d50ab66, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.31
+      value: 4.04
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d387073f34964b243b9c911f2d50ab66, type: 3}
       propertyPath: m_LocalPosition.z
@@ -275,6 +275,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7865937493154655368, guid: d387073f34964b243b9c911f2d50ab66, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7865937493154655368, guid: d387073f34964b243b9c911f2d50ab66, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.83
+      objectReference: {fileID: 0}
+    - target: {fileID: -7865937493154655368, guid: d387073f34964b243b9c911f2d50ab66, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.18
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d387073f34964b243b9c911f2d50ab66, type: 3}
       propertyPath: m_Name
       value: Remy
@@ -289,14 +301,11 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: fa4de14750aa36a40b728c954da98d14, type: 2}
     - target: {fileID: 5866666021909216657, guid: d387073f34964b243b9c911f2d50ab66, type: 3}
       propertyPath: m_WarningMessage
-      value: "\nBinding warning: Some generic clip(s) animate transforms that are
-        already bound by a Humanoid avatar. These transforms can only be changed
-        by Humanoid clips.\n\tTransform 'mixamorig:Hips'\n\tTransform 'mixamorig:LeftFoot'\n\tTransform
-        'mixamorig:LeftHandThumb2'\n\tTransform 'mixamorig:LeftHandIndex1'\n\tTransform
-        'mixamorig:LeftHandPinky2'\n\tTransform 'mixamorig:RightHandRing2'\n\tTransform
-        'mixamorig:Spine1'\n\tTransform 'mixamorig:LeftToeBase'\n\tTransform 'mixamorig:LeftHandThumb3'\n\tTransform
-        'mixamorig:RightArm'\n\tand more ...\n\tFrom animation clip 'Idle'\n\tFrom
-        animation clip 'Walking'\n\tFrom animation clip 'Jump'"
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: d387073f34964b243b9c911f2d50ab66, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -304,56 +313,25 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d387073f34964b243b9c911f2d50ab66, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 674223253}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d387073f34964b243b9c911f2d50ab66, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 674223255}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d387073f34964b243b9c911f2d50ab66, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 674223254}
+      addedObject: {fileID: 674223261}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d387073f34964b243b9c911f2d50ab66, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 674223260}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d387073f34964b243b9c911f2d50ab66, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 674223259}
+    - targetCorrespondingSourceObject: {fileID: -3286910004361259421, guid: d387073f34964b243b9c911f2d50ab66, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1297278242}
   m_SourcePrefab: {fileID: 100100000, guid: d387073f34964b243b9c911f2d50ab66, type: 3}
 --- !u!1 &674223251 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d387073f34964b243b9c911f2d50ab66, type: 3}
   m_PrefabInstance: {fileID: 674223250}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &674223253
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 674223251}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83d464a405ce2454ab91dab47bac0e8f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  jumpforce: 5
---- !u!136 &674223254
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 674223251}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 1
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &674223255
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -381,6 +359,48 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &674223259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674223251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e54ad36f12bc47045a06747b4bfac735, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  jumpForce: 5
+  Raylength: 1.1
+--- !u!114 &674223260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674223251}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4460f509f25fd7d41bb7c32b91746ed9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpForce: 5
+  Raylength: 0.5
+--- !u!114 &674223261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674223251}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83d464a405ce2454ab91dab47bac0e8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
 --- !u!1 &1047862843
 GameObject:
   m_ObjectHideFlags: 0
@@ -489,6 +509,32 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1297278239 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -3286910004361259421, guid: d387073f34964b243b9c911f2d50ab66, type: 3}
+  m_PrefabInstance: {fileID: 674223250}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1297278242
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1297278239}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.73240656, y: 0.5, z: 0.78030026}
+  m_Center: {x: 0.015659735, y: -0.5838047, z: -3.122852}
 --- !u!1 &1926266644
 GameObject:
   m_ObjectHideFlags: 0
