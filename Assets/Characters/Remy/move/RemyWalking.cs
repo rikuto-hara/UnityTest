@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class RemyMove : MonoBehaviour
+public class RemyWalking : MonoBehaviour
 {
     public float speed = 5f; // Speed of the character movement
     Rigidbody rb; // Reference to the Rigidbody component
@@ -15,8 +15,7 @@ public class RemyMove : MonoBehaviour
     {
         float x = Input.GetAxis("Horizontal"); // Get horizontal input
         float z = Input.GetAxis("Vertical"); // Get vertical input
-        bool jump = Input.GetButtonDown("Jump"); // Check if the jump button is pressed
         Vector3 vec = new Vector3(x, 0, z); // Create a movement vector
-        rb.linearVelocity = vec * speed * Time.deltaTime; // Set the Rigidbody's velocity based on input and speed
+        rb.linearVelocity = vec * speed; // Set the Rigidbody's velocity based on input and speed
     }
 }
