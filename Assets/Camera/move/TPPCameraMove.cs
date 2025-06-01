@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class CameraMove : MonoBehaviour
+public class TPPCameraMove : MonoBehaviour
 {
     public Transform target;        // 追従する対象（プレイヤー）
     public Vector3 offset = new Vector3(0, 3, -5); // プレイヤーからの相対位置
