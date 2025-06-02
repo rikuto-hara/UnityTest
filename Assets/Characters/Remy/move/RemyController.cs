@@ -41,9 +41,14 @@ public class RemyController : MonoBehaviour
         }
         else
         {
-            vec = Camera.main.transform.right * x + Camera.main.transform.forward * z; // カメラの方向に応じてvecを回転させる
+            Vector3 forward = Camera.main.transform.forward;
+            Vector3 right = Camera.main.transform.right;
+            forward.y = 0;
+            right.y = 0;
+            forward.Normalize();
+            right.Normalize();
+            vec = right * x + forward * z;
         }
-        vec.y = 0; // 上下方向は無視
         isWalking = vec.magnitude > 0.1f; // Check if the character is moving
 
         /*地面判定*/
@@ -69,7 +74,7 @@ public class RemyController : MonoBehaviour
 
         else if (run)
         {
-            anim.SetBool("RunBool", false);
+            anim.SetBool("WalkBool", false);
             velocity.x = vec.x * runspeed;
             velocity.z = vec.z * runspeed;
             if (Mathf.Abs(velocity.x) > 0 || Mathf.Abs(velocity.z) > 0)
@@ -84,11 +89,13 @@ public class RemyController : MonoBehaviour
         rb.linearVelocity = velocity;
 
         /*回転の処理*/
+        /*
         if (isWalking)
         {
             Quaternion targetRotation = Quaternion.LookRotation(vec);
             transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, 0.2f);
         }
+        */
 
         /*ジャンプの処理*/
         jump = Input.GetButtonDown("Jump"); // Check if the jump button is pressed

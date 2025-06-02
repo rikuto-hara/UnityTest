@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PlayerLook : MonoBehaviour
+public class FPPCameraMove: MonoBehaviour
 {
     public float mouseSensitivity = 100f;
     public Transform playerBody;
@@ -18,7 +18,7 @@ public class PlayerLook : MonoBehaviour
         float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
 
         xRotation -= mouseY;
-        xRotation = Mathf.Clamp(xRotation, -90f, 90f); // 上下回転の制限
+        xRotation = Mathf.Clamp(xRotation, -89f, 89f); // 上下回転の制限
 
         transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f); // 上下の回転（カメラ）
         playerBody.Rotate(Vector3.up * mouseX); // 左右の回転（プレイヤー本体）
